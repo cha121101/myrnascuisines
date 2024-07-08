@@ -1,0 +1,37 @@
+<div id="default-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden items-center justify-center fixed top-0 bottom-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-center justify-center p-4 border-b rounded-t ">
+                <h3 class="text-2xl font-extrabold text-center text-gray-900 font-geologica ">
+                    Confirmation
+                </h3>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6 font-geologica">
+                <ul class="mx-3 text-lg font-light text-left text-gray-800 list-disc divide-y divide-gray-600 marker:text-red-600 font-Geologica">
+                <li class="my-2">
+                  <p> Name</p> <p id="confirm-fullname"></p>
+                </li>
+
+                <li class="my-2">
+                    <p>Address:</p> <p id="confirm-address"></p>
+                </li>
+                <li class="my-2">
+                    <p>Phone Number:</p> <p id="confirm-phone"></p>
+                </li>
+                <li class="my-2">
+                    <p>Email:</p> <p id="confirm-email"></p>
+                </li>
+
+                </ul>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b ">
+                <button data-modal-hide="default-modal" type="submit" id="submitbtn" onclick="checkall()" class="px-3 py-2 text-white bg-green-600 border-l border-gray-200 rounded-md font-geologica hover:bg-green-500 hover:scale-110 hover:text-white">I accept</button>
+                <button data-modal-hide="default-modal" type="button" class="px-3 py-2 text-white bg-red-600 border-l border-gray-200 rounded-md font-geologica hover:bg-red-500 hover:scale-110 hover:text-white">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
